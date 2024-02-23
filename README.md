@@ -41,3 +41,5 @@ viso gt
 
 Choose template from a list using arrows
 press Enter and give your own name for folder
+
+###### Leave your issues or suggestions here: https://github.com/Zelinskyi-Serhii/project-templates
