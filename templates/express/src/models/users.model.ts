@@ -30,11 +30,6 @@ export class Users extends Model {
 
   @Column({
     type: DataTypes.STRING,
-  })
-  prefixName: string | null;
-
-  @Column({
-    type: DataTypes.STRING,
     allowNull: false,
   })
   firstName: string;
@@ -49,16 +44,6 @@ export class Users extends Model {
     type: DataTypes.STRING,
   })
   phoneNumber: string;
-
-  @Column({
-    type: DataTypes.STRING,
-  })
-  nameForPatients: string | null;
-
-  @Column({
-    type: DataTypes.STRING,
-  })
-  nameForGroupPractice: string | null;
 
   @Column({
     type: DataTypes.INTEGER,
@@ -98,11 +83,4 @@ export class Users extends Model {
     type: DataTypes.STRING,
   })
   practiceTime: string | null;
-
-  @Column({
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    defaultValue: 0,
-  })
-  subscriptionExpireAt: number;
 }

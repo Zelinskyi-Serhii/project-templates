@@ -42,17 +42,13 @@ const register = async (req: Request, res: Response) => {
     const activationCode = generateActivationCode();
     const [, isCreated] = await authService.createUser({
       email,
-      prefixName: null,
       firstName,
       lastName,
       password: hashedPassword,
-      nameForPatients: null,
-      nameForGroupPractice: null,
       activationCode,
       notifications: false,
       twoFactorAuthentication: false,
       phoneNumber: null,
-      subscriptionExpireAt: 0,
     });
 
     if (!isCreated) {

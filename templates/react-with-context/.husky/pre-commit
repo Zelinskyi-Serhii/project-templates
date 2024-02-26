@@ -1,1 +1,2 @@
+npx stylelint "**/*.{css,scss}" ----max-warnings 10
 npx lint-staged
